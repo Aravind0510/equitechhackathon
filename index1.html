@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+ 
+</head>
+<body>
+  <h1>
+    Fill the form given below
+  </h1>
+  <div class="container">
+    <form action="{{url_for('predict')}}"method="post">
+      <input type="text" name="Logical quotient rating" placeholder="Logical quotient rating" required>
+      <input type="text" name="coding skills rating" placeholder="coding skills rating" required>
+      <input type="text" name="hackathons" placeholder="hackathons" required>
+      <input type="text" name="public speaking points" placeholder="public speaking points" required>
+      <input type="text" name="self-learning capability?" placeholder="self-learning capability?" required>
+      <input type="text" name="Extra-courses did" placeholder="Extra-courses did" required>
+      <input type="text" name="Taken inputs from seniors or elders" placeholder="Taken inputs from seniors or elders" required>
+      <input type="text" name="worked in teams ever?" placeholder="worked in teams ever?" required>
+      <input type="text" name="Introvert" placeholder="Introvert" required>
+      <input type="text" name="reading and writing skills" placeholder="reading and writing skills" required>
+      <input type="text" name="memory capability score" placeholder="memory capability score" required>
+      <input type="text" name="B_hard worker"  placeholder="B_hard worker" required>
+      <input type="text" name="B_smart worker" placeholder="B_smart worker" required>
+      <input type="text" name="A_Management" placeholder="A_Management" required>
+      <input type="text" name="A_Technical" placeholder="A_Technical" required>
+      <input type="text" name="loan_expense" placeholder="Interested subjects_code" required>
+      <input type="text" name="Interested subjects_code" placeholder="Interested Type of Books_code" required>
+      <input type="text" name="certifications_code"  placeholder="certifications_code" required>
+      <input type="text" name="workshops_code" placeholder="workshops_code" required>
+      <input type="text" name="Type of company want to settle in?_code" placeholder="Type of company want to settle in?_code" required>
+      <input type="text" name="interested career area _code"  placeholder="interested career area _code" required>
+      <button type="submit" class="btn">Predict</button>
+    </form>
+
+    <br>
+    <br>
+    {{ prediction_text }}
+  </div>
+</body>
+</html>
